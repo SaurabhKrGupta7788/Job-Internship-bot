@@ -1,0 +1,10 @@
+.env
+__pycache__/
+*.pyc
+jobs.db
+profile.db
+chrome_profile/
+browser-use-user-data-dir*
+output/
+agent_job_*.gif
+automator.log

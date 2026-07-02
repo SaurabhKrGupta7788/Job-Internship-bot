@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><title>Greenhouse Mock - Application</title></head>
+<body>
+  <div id="main-container">
+    <h2>Apply for Senior Python Developer</h2>
+    <form id="application_form" action="/greenhouse/submit" method="POST" enctype="multipart/form-data">
+      
+      <!-- Resume Upload -->
+      <div class="field">
+        <label>Resume/CV <span class="required">*</span></label>
+        <input type="file" id="resume_upload" name="resume" required>
+      </div>
+
+      <!-- Contact Details -->
+      <div class="field">
+        <label for="first_name">First Name <span class="required">*</span></label>
+        <input type="text" id="first_name" name="first_name" required>
+      </div>
+      <div class="field">
+        <label for="last_name">Last Name <span class="required">*</span></label>
+        <input type="text" id="last_name" name="last_name" required>
+      </div>
+      <div class="field">
+        <label for="email">Email <span class="required">*</span></label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="field">
+        <label for="phone">Phone <span class="required">*</span></label>
+        <input type="text" id="phone" name="phone" required>
+      </div>
+
+      <!-- Custom Questions -->
+      <div class="field">
+        <label for="job_application_answers_attributes_0_text_value">Years of experience with Python?</label>
+        <input type="text" id="job_application_answers_attributes_0_text_value" name="experience_years">
+      </div>
+      <div class="field">
+        <label for="job_application_answers_attributes_1_value">Will you require sponsorship?</label>
+        <select id="job_application_answers_attributes_1_value" name="sponsorship">
+          <option value="">Select...</option>
+          <option value="yes">Yes</option>
+          <option value="no">No</option>
+        </select>
+      </div>
+
+      <div class="actions">
+        <button type="submit" id="submit_app">Submit Application</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>

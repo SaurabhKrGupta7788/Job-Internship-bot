@@ -1,0 +1,5 @@
+2026/06/30-18:56:06.097 9f34 Creating DB C:\Users\100ra\.gemini\antigravity\scratch\job_apply_bot\user_data\Default\EdgeCoupons/coupons_data.db since it was missing.
+2026/06/30-18:56:06.150 9f34 Reusing MANIFEST C:\Users\100ra\.gemini\antigravity\scratch\job_apply_bot\user_data\Default\EdgeCoupons/coupons_data.db/MANIFEST-000001
+2026/06/30-18:56:06.312 a098 Level-0 table #5: started
+2026/06/30-18:56:06.316 a098 Level-0 table #5: 682897 bytes OK
+2026/06/30-18:56:06.318 a098 Delete type=0 #3

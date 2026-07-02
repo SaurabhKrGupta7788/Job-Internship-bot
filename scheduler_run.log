@@ -1,0 +1,240 @@
+
+--- Automation Triggered at 2026-06-26 19:32:01 ---
+Starting job search...
+Job search finished. Added 80 new jobs.
+Pre-tailoring new jobs in background...
+   Successfully pre-tailored Job ID 227
+   Failed to tailor Job ID 229: expected string or bytes-like object, got 'NoneType'
+   Successfully pre-tailored Job ID 254
+   Successfully pre-tailored Job ID 255
+   Successfully pre-tailored Job ID 256
+   Successfully pre-tailored Job ID 258
+   Successfully pre-tailored Job ID 259
+   Successfully pre-tailored Job ID 260
+   Successfully pre-tailored Job ID 261
+   Successfully pre-tailored Job ID 262
+   Successfully pre-tailored Job ID 263
+   Successfully pre-tailored Job ID 264
+   Successfully pre-tailored Job ID 265
+   Successfully pre-tailored Job ID 266
+   Successfully pre-tailored Job ID 267
+   Successfully pre-tailored Job ID 268
+   Successfully pre-tailored Job ID 269
+   Successfully pre-tailored Job ID 270
+   Successfully pre-tailored Job ID 271
+   Successfully pre-tailored Job ID 272
+   Successfully pre-tailored Job ID 273
+   Successfully pre-tailored Job ID 274
+   Successfully pre-tailored Job ID 275
+   Successfully pre-tailored Job ID 276
+   Successfully pre-tailored Job ID 277
+   Successfully pre-tailored Job ID 278
+   Successfully pre-tailored Job ID 279
+   Successfully pre-tailored Job ID 280
+   Successfully pre-tailored Job ID 281
+   Successfully pre-tailored Job ID 282
+   Successfully pre-tailored Job ID 283
+   Successfully pre-tailored Job ID 284
+   Successfully pre-tailored Job ID 285
+   Failed to tailor Job ID 286: expected string or bytes-like object, got 'NoneType'
+   Successfully pre-tailored Job ID 287
+   Successfully pre-tailored Job ID 288
+   Successfully pre-tailored Job ID 289
+   Successfully pre-tailored Job ID 290
+   Successfully pre-tailored Job ID 291
+   Successfully pre-tailored Job ID 292
+   Successfully pre-tailored Job ID 293
+   Successfully pre-tailored Job ID 294
+   Successfully pre-tailored Job ID 295
+   Successfully pre-tailored Job ID 296
+   Successfully pre-tailored Job ID 297
+   Successfully pre-tailored Job ID 298
+   Successfully pre-tailored Job ID 299
+   Successfully pre-tailored Job ID 300
+   Successfully pre-tailored Job ID 301
+   Successfully pre-tailored Job ID 302
+   Successfully pre-tailored Job ID 303
+   Successfully pre-tailored Job ID 304
+   Successfully pre-tailored Job ID 305
+   Successfully pre-tailored Job ID 306
+   Successfully pre-tailored Job ID 307
+   Successfully pre-tailored Job ID 308
+   Successfully pre-tailored Job ID 309
+   Successfully pre-tailored Job ID 310
+   Successfully pre-tailored Job ID 311
+   Successfully pre-tailored Job ID 312
+   Successfully pre-tailored Job ID 313
+   Successfully pre-tailored Job ID 314
+   Successfully pre-tailored Job ID 315
+   Successfully pre-tailored Job ID 316
+   Successfully pre-tailored Job ID 317
+   Successfully pre-tailored Job ID 318
+   Successfully pre-tailored Job ID 319
+   Successfully pre-tailored Job ID 320
+   Successfully pre-tailored Job ID 321
+   Successfully pre-tailored Job ID 322
+   Successfully pre-tailored Job ID 323
+   Successfully pre-tailored Job ID 324
+   Successfully pre-tailored Job ID 325
+   Successfully pre-tailored Job ID 326
+   Successfully pre-tailored Job ID 327
+   Successfully pre-tailored Job ID 328
+   Successfully pre-tailored Job ID 329
+   Successfully pre-tailored Job ID 330
+   Successfully pre-tailored Job ID 331
+   Successfully pre-tailored Job ID 332
+   Successfully pre-tailored Job ID 333
+   Successfully pre-tailored Job ID 334
+   Successfully pre-tailored Job ID 335
+   Successfully pre-tailored Job ID 336
+   Successfully pre-tailored Job ID 337
+   Successfully pre-tailored Job ID 338
+   Successfully pre-tailored Job ID 339
+   Successfully pre-tailored Job ID 340
+   Successfully pre-tailored Job ID 341
+   Successfully pre-tailored Job ID 342
+   Successfully pre-tailored Job ID 343
+   Successfully pre-tailored Job ID 344
+   Successfully pre-tailored Job ID 345
+   Successfully pre-tailored Job ID 346
+   Successfully pre-tailored Job ID 347
+   Successfully pre-tailored Job ID 348
+   Successfully pre-tailored Job ID 349
+   Successfully pre-tailored Job ID 350
+   Successfully pre-tailored Job ID 351
+   Successfully pre-tailored Job ID 352
+   Successfully pre-tailored Job ID 353
+   Successfully pre-tailored Job ID 354
+   Successfully pre-tailored Job ID 355
+   Successfully pre-tailored Job ID 356
+   Successfully pre-tailored Job ID 357
+   Successfully pre-tailored Job ID 358
+   Successfully pre-tailored Job ID 359
+   Successfully pre-tailored Job ID 360
+   Successfully pre-tailored Job ID 361
+   Successfully pre-tailored Job ID 362
+   Successfully pre-tailored Job ID 363
+   Successfully pre-tailored Job ID 364
+   Successfully pre-tailored Job ID 365
+   Successfully pre-tailored Job ID 366
+   Successfully pre-tailored Job ID 367
+   Successfully pre-tailored Job ID 368
+   Failed to tailor Job ID 369: expected string or bytes-like object, got 'NoneType'
+   Successfully pre-tailored Job ID 370
+   Successfully pre-tailored Job ID 371
+   Successfully pre-tailored Job ID 372
+   Successfully pre-tailored Job ID 373
+   Successfully pre-tailored Job ID 374
+   Successfully pre-tailored Job ID 375
+   Successfully pre-tailored Job ID 376
+   Successfully pre-tailored Job ID 377
+   Successfully pre-tailored Job ID 378
+   Successfully pre-tailored Job ID 379
+   Successfully pre-tailored Job ID 380
+   Successfully pre-tailored Job ID 381
+   Successfully pre-tailored Job ID 382
+   Successfully pre-tailored Job ID 383
+   Successfully pre-tailored Job ID 384
+   Successfully pre-tailored Job ID 385
+   Successfully pre-tailored Job ID 386
+   Successfully pre-tailored Job ID 387
+   Successfully pre-tailored Job ID 388
+   Successfully pre-tailored Job ID 389
+   Successfully pre-tailored Job ID 390
+   Successfully pre-tailored Job ID 391
+   Successfully pre-tailored Job ID 392
+Checking for follow-up emails...
+ERROR: Automation failed with exception: 'charmap' codec can't encode characters in position 140-146: character maps to <undefined>
+
+--- Automation Triggered at 2026-06-26 19:56:48 ---
+Starting job search...
+Job search finished. Added 18 new jobs.
+Pre-tailoring new jobs in background...
+   Failed to tailor Job ID 229: expected string or bytes-like object, got 'NoneType'
+   Failed to tailor Job ID 286: expected string or bytes-like object, got 'NoneType'
+   Failed to tailor Job ID 369: expected string or bytes-like object, got 'NoneType'
+   Successfully pre-tailored Job ID 393
+   Successfully pre-tailored Job ID 394
+   Successfully pre-tailored Job ID 395
+   Successfully pre-tailored Job ID 396
+   Successfully pre-tailored Job ID 397
+   Successfully pre-tailored Job ID 398
+   Successfully pre-tailored Job ID 399
+   Successfully pre-tailored Job ID 400
+   Failed to tailor Job ID 401: 'charmap' codec can't encode characters in position 111-114: character maps to <undefined>
+   Successfully pre-tailored Job ID 402
+   Successfully pre-tailored Job ID 403
+   Successfully pre-tailored Job ID 404
+   Successfully pre-tailored Job ID 405
+   Successfully pre-tailored Job ID 406
+   Successfully pre-tailored Job ID 407
+   Successfully pre-tailored Job ID 408
+   Successfully pre-tailored Job ID 409
+   Successfully pre-tailored Job ID 410
+Checking for follow-up emails...
+Email check finished. Logged 10 updates.
+Automation completed successfully.
+
+--- Automation Triggered at 2026-06-26 20:02:13 ---
+Starting job search...
+Job search finished. Added 18 new jobs.
+Pre-tailoring new jobs in background...
+   Failed to tailor Job ID 229: expected string or bytes-like object, got 'NoneType'
+   Failed to tailor Job ID 286: expected string or bytes-like object, got 'NoneType'
+   Failed to tailor Job ID 369: expected string or bytes-like object, got 'NoneType'
+   Failed to tailor Job ID 401: 'charmap' codec can't encode characters in position 111-114: character maps to <undefined>
+   Successfully pre-tailored Job ID 411
+   Successfully pre-tailored Job ID 412
+   Failed to tailor Job ID 413: Extra data: line 79 column 1 (char 4837)
+   Successfully pre-tailored Job ID 414
+   Successfully pre-tailored Job ID 415
+   Successfully pre-tailored Job ID 416
+   Successfully pre-tailored Job ID 417
+   Successfully pre-tailored Job ID 418
+   Successfully pre-tailored Job ID 419
+   Successfully pre-tailored Job ID 420
+   Successfully pre-tailored Job ID 421
+   Successfully pre-tailored Job ID 422
+   Successfully pre-tailored Job ID 423
+   Successfully pre-tailored Job ID 424
+   Successfully pre-tailored Job ID 425
+   Successfully pre-tailored Job ID 426
+   Successfully pre-tailored Job ID 427
+   Successfully pre-tailored Job ID 428
+   Successfully pre-tailored Job ID 429
+   Successfully pre-tailored Job ID 430
+   Successfully pre-tailored Job ID 431
+   Successfully pre-tailored Job ID 432
+   Successfully pre-tailored Job ID 433
+   Successfully pre-tailored Job ID 434
+   Successfully pre-tailored Job ID 435
+   Successfully pre-tailored Job ID 436
+   Successfully pre-tailored Job ID 437
+   Successfully pre-tailored Job ID 438
+   Successfully pre-tailored Job ID 439
+   Successfully pre-tailored Job ID 440
+   Successfully pre-tailored Job ID 441
+   Successfully pre-tailored Job ID 442
+   Successfully pre-tailored Job ID 443
+   Successfully pre-tailored Job ID 444
+   Successfully pre-tailored Job ID 445
+Checking for follow-up emails...
+Email check finished. Logged 10 updates.
+Automation completed successfully.
+
+--- Automation Triggered at 2026-06-26 20:15:13 ---
+Starting job search...
+Job search finished. Added 2 new jobs.
+Pre-tailoring new jobs in background...
+   Failed to tailor Job ID 229: expected string or bytes-like object, got 'NoneType'
+   Failed to tailor Job ID 286: expected string or bytes-like object, got 'NoneType'
+   Failed to tailor Job ID 369: expected string or bytes-like object, got 'NoneType'
+   Failed to tailor Job ID 401: 'charmap' codec can't encode characters in position 111-114: character maps to <undefined>
+   Successfully pre-tailored Job ID 413
+   Successfully pre-tailored Job ID 446
+   Successfully pre-tailored Job ID 447
+Checking for follow-up emails...
+Email check finished. Logged 9 updates.
+Applying to tailored jobs in background...
+Successfully ran application loop. Applied to 0 jobs.
+Automation completed successfully.

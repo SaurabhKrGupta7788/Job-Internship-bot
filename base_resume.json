@@ -1,0 +1,58 @@
+{
+  "name": "Jane Doe",
+  "email": "jane.doe@example.com",
+  "phone": "+91 98765 43210",
+  "linkedin": "linkedin.com/in/janedoe",
+  "github": "github.com/janedoe",
+  "website": "janedoe.dev",
+  "summary": "Results-driven Software Engineer with 3+ years of experience building scalable web applications. Proficient in Python, Flask, and SQLite. Passionate about automating processes and improving system efficiency.",
+  "skills": [
+    "Python",
+    "Flask",
+    "SQL (SQLite, PostgreSQL)",
+    "JavaScript",
+    "HTML5 / CSS3",
+    "Git",
+    "RESTful APIs",
+    "Docker"
+  ],
+  "experience": [
+    {
+      "company": "Tech Solutions Pvt. Ltd.",
+      "role": "Software Engineer",
+      "dates": "June 2024 - Present",
+      "highlights": [
+        "Developed and maintained RESTful APIs using Flask and PostgreSQL, reducing latency by 15%.",
+        "Automated database backup scripts using Python, saving the engineering team 5 hours of manual work weekly.",
+        "Collaborated with cross-functional teams to design and implement interactive dashboard features for client reporting."
+      ]
+    },
+    {
+      "company": "WebCraft Studios",
+      "role": "Junior Backend Developer",
+      "dates": "January 2023 - May 2024",
+      "highlights": [
+        "Implemented secure user authentication modules using Python and Flask-Login.",
+        "Optimized database queries, reducing average page load time by 20%.",
+        "Wrote clean, documented, and unit-tested code, contributing to a 10% decrease in runtime bugs."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "title": "Local Task Scheduler",
+      "description": "A desktop task scheduling application that runs local jobs on Windows.",
+      "highlights": [
+        "Built using Python and SQLite, featuring a light/dark themed local dashboard.",
+        "Integrated Windows schtasks for native task scheduling."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "National Institute of Technology",
+      "degree": "Bachelor of Technology in Computer Science",
+      "dates": "2019 - 2023"
+    }
+  ]
+}

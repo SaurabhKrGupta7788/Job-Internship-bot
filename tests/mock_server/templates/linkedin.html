@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Mock LinkedIn Job View</title>
+  <style>
+    .modal { display: none; position: fixed; top: 10%; left: 10%; width: 80%; height: 80%; background: white; border: 2px solid #ccc; z-index: 1000; padding: 20px; }
+    .modal-backdrop { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); z-index: 900; }
+    .step { display: none; }
+    .step.active { display: block; }
+  </style>
+</head>
+<body>
+  <!-- Job Card List (Added for E2E search flow) -->
+  <div class="jobs-search-results__list-item" style="cursor: pointer; margin-bottom: 10px; border: 1px solid #ccc; padding: 5px;" onclick="window.history.pushState({}, '', '?currentJobId=12345')">
+    Mock Job Card 12345 (Click to select)
+  </div>
+
+  <!-- Job Listing Details (Parsed by Automator) -->
+  <div class="job-detail-container">
+    <h2 class="jobs-unified-top-card__job-title">Senior Python Developer</h2>
+    <span class="jobs-unified-top-card__company-name">InnovateTech Systems</span>
+    <div class="jobs-description__content" id="job-details">
+      Looking for a Senior Python Developer with experience in Flask, SQLite, and automated script creation.
+    </div>
+    
+    <!-- Recruiter Details -->
+    <div class="jobs-poster__name">John Doe</div>
+    
+    <!-- Easy Apply Trigger -->
+    <button class="jobs-apply-button">Easy Apply</button>
+  </div>
+
+  <!-- Easy Apply Modal Dialog -->
+  <div class="modal-backdrop" id="backdrop"></div>
+  <div class="modal" id="easyApplyModal" role="dialog">
+    <div class="modal-header">
+      <h3>Apply to InnovateTech Systems</h3>
+      <button aria-label="Dismiss" class="close-modal-btn">Dismiss</button>
+    </div>
+    
+    <div class="modal-body">
+      <!-- Step 1: Contact Info -->
+      <div class="step active" id="step-1">
+        <h4>Step 1: Contact Information</h4>
+        <div class="jobs-easy-apply-form-section__grouping">
+          <label>City Location</label>
+          <input type="text" name="city" placeholder="e.g. Remote">
+        </div>
+        <button type="button" class="next-btn">Next</button>
+      </div>
+
+      <!-- Step 2: Resume Upload -->
+      <div class="step" id="step-2">
+        <h4>Step 2: Upload Resume</h4>
+        <div class="jobs-easy-apply-form-section__grouping">
+          <label>Attach Resume</label>
+          <input type="file" name="resume_file">
+        </div>
+        <button type="button" class="back-btn">Back</button>
+        <button type="button" class="next-btn">Review</button>
+      </div>
+
+      <!-- Step 3: Additional Questions -->
+      <div class="step" id="step-3">
+        <h4>Step 3: Questions</h4>
+        <div class="jobs-easy-apply-form-section__grouping">
+          How many years of experience do you have with Python?
+          <input type="text" name="experience_years">
+        </div>
+        <div class="jobs-easy-apply-form-section__grouping">
+          What is your notice period?
+          <input type="text" name="notice_period">
+        </div>
+        <div class="jobs-easy-apply-form-section__grouping">
+          Do you require work authorization sponsorship?
+          <select name="sponsorship">
+            <option value="">Select option</option>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+          </select>
+        </div>
+        <button type="button" class="back-btn">Back</button>
+        <button type="button" class="submit-btn">Submit application</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Discard Confirmation Dialog -->
+  <div class="modal" id="discardModal" style="display:none; z-index:1001; height: 30%;">
+    <p>Are you sure you want to discard your application?</p>
+    <button class="discard-confirm-btn">Discard</button>
+    <button class="discard-cancel-btn">Cancel</button>
+  </div>
+
+  <script>
+    // Easy Apply Form JavaScript Mock
+    const applyBtn = document.querySelector('.jobs-apply-button');
+    const modal = document.getElementById('easyApplyModal');
+    const backdrop = document.getElementById('backdrop');
+    const discardModal = document.getElementById('discardModal');
+    const steps = Array.from(document.querySelectorAll('.step'));
+    let currentStepIdx = 0;
+
+    applyBtn.addEventListener('click', () => {
+      modal.style.display = 'block';
+      backdrop.style.display = 'block';
+    });
+
+    document.querySelectorAll('.close-modal-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        discardModal.style.display = 'block';
+      });
+    });
+
+    document.querySelector('.discard-confirm-btn').addEventListener('click', () => {
+      modal.style.display = 'none';
+      backdrop.style.display = 'none';
+      discardModal.style.display = 'none';
+      // Reset steps
+      steps[currentStepIdx].classList.remove('active');
+      currentStepIdx = 0;
+      steps[currentStepIdx].classList.add('active');
+    });
+
+    document.querySelector('.discard-cancel-btn').addEventListener('click', () => {
+      discardModal.style.display = 'none';
+    });
+
+    document.querySelectorAll('.next-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        steps[currentStepIdx].classList.remove('active');
+        currentStepIdx++;
+        steps[currentStepIdx].classList.add('active');
+      });
+    });
+
+    document.querySelectorAll('.back-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        steps[currentStepIdx].classList.remove('active');
+        currentStepIdx--;
+        steps[currentStepIdx].classList.add('active');
+      });
+    });
+
+    document.querySelector('.submit-btn').addEventListener('click', () => {
+      // Send application post to mock server backend
+      fetch('/linkedin/submit', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ success: true })
+      }).then(() => {
+        modal.style.display = 'none';
+        backdrop.style.display = 'none';
+        alert('Application submitted successfully!');
+      });
+    });
+  </script>
+</body>
+</html>

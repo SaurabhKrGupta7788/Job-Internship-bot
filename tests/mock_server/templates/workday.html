@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Workday Mock - Step {{ step }}</title>
+</head>
+<body>
+  <div class="workday-container">
+    {% if step == 1 %}
+    <h2>My Information</h2>
+    <form action="/workday/apply/1" method="POST">
+      <div class="form-group">
+        <label for="input-firstName">First Name</label>
+        <input type="text" id="input-firstName" data-automation-id="legalNameSection_firstName" name="firstName" required>
+      </div>
+      <div class="form-group">
+        <label for="input-lastName">Last Name</label>
+        <input type="text" id="input-lastName" data-automation-id="legalNameSection_lastName" name="lastName" required>
+      </div>
+      <div class="form-group">
+        <label for="input-email">Email Address</label>
+        <input type="email" id="input-email" data-automation-id="contactInformation_email" name="email" required>
+      </div>
+      <div class="navigation">
+        <button type="submit" data-automation-id="bottom-navigation-next-button">Next</button>
+      </div>
+    </form>
+    {% elif step == 2 %}
+    <h2>Work Experience</h2>
+    <form action="/workday/apply/2" method="POST" enctype="multipart/form-data">
+      <div class="form-group">
+        <label for="resume-upload">Upload Resume (DOCX/PDF)</label>
+        <input type="file" id="resume-upload" data-automation-id="file-upload-input" name="resume" accept=".docx,.pdf" required>
+      </div>
+      <div class="form-group">
+        <label for="input-jobTitle">Previous Job Title</label>
+        <input type="text" id="input-jobTitle" data-automation-id="jobHistorySection_jobTitle" name="jobTitle">
+      </div>
+      <div class="navigation">
+        <a href="/workday/apply/1" data-automation-id="bottom-navigation-back-button">Back</a>
+        <button type="submit" data-automation-id="bottom-navigation-next-button">Next</button>
+      </div>
+    </form>
+    {% elif step == 3 %}
+    <h2>Review Your Application</h2>
+    <p>Please confirm your information before submitting.</p>
+    <form action="/workday/submit" method="POST">
+      <div class="navigation">
+        <a href="/workday/apply/2" data-automation-id="bottom-navigation-back-button">Back</a>
+        <button type="submit" data-automation-id="bottom-navigation-submit-button">Submit</button>
+      </div>
+    </form>
+    {% endif %}
+  </div>
+</body>
+</html>
